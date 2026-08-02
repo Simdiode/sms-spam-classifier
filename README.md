@@ -6,6 +6,21 @@ A Transformer encoder built and trained **from scratch in PyTorch** (no pretrain
 - Small model: 2 encoder layers, 64-dim embeddings (~1.4 MB checkpoint)
 - Trained on the [SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) dataset (5,572 messages)
 
+## Live demo
+
+The API is deployed on Render:
+
+- **Interactive docs:** https://sms-spam-classifier-wh84.onrender.com/docs — try the classifier from your browser
+- **Health check:** https://sms-spam-classifier-wh84.onrender.com/health
+
+```bash
+curl -X POST https://sms-spam-classifier-wh84.onrender.com/predict \
+  -H "Content-Type: application/json" \
+  -d '{"text": "WIN a free prize now!"}'
+```
+
+> Note: the service runs on Render's free tier — the first request after a period of inactivity can take ~a minute while the instance spins up.
+
 ## Project structure
 
 | File | Purpose |
