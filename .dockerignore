@@ -1,0 +1,8 @@
+.venv
+.venv_py39_backup
+venv
+__pycache__
+*.pyc
+.ipynb_checkpoints
+.git
+*.ipynb

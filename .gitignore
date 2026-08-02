@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+.venv_py39_backup/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Scratch / unrelated files (kept local, not part of the spam classifier)
+Untitled-1.ipynb
+spam_classifier.pt
+
+# Local logs
+uvi_*.txt
